@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- 
+    <LinearLayout
+        android:id="@+id/LinearLayoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/omc_darkgray"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ImageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_logo"
+            android:scaleType="center"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/ProgressBarUpdating"
+                style="?android:attr/progressBarStyleSmall"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+	
+		</LinearLayout>
+
+	</LinearLayout>
+-->
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:visibility="gone"
+            android:background="@color/omc_darkgray">
+
+            <ProgressBar
+                android:id="@+id/ProgressBarUpdating"
+                style="?android:attr/progressBarStyleSmall"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+	
+            <TextView
+             	android:id="@+id/TextViewUpdating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/omc_darkgray"
+                android:textColor="@color/omc_white"
+                android:text="checking for new articles and podcasts..."
+                 />
+            
+		</LinearLayout>  
+    
+<TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/omc_gray" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/omc_gray" 
+            android:tabStripEnabled="false">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutNews"
+                android:layout_width="match_parent"
+                android:orientation="vertical" 
+                android:layout_height="match_parent" >
+
+				<ListView
+				    android:id="@+id/ListViewAllArticles"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:background="@color/omc_gray" >
+
+				</ListView>
+	        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPodcasts"
+                android:orientation="vertical" 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+				<ListView
+				    android:id="@+id/ListViewAllPodcasts"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent" 
+				    android:background="@color/omc_gray" >
+				</ListView>                
+                
+                
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+	
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/omc_gray"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/omc_darkgray"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/accessibility_logo"
+            android:scaleType="center"
+            android:src="@drawable/logo" >
+        </ImageView>
+	</LinearLayout>
+	-->
+    
+	<TextView
+	    android:id="@+id/TextViewManageSavedPodcastsLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4dp"
+	    android:paddingTop="4dp"
+	    android:text="@string/caption_savedpodcasts"
+	    android:textColor="@color/omc_red"
+	    android:textStyle="bold" >
+
+	</TextView>
+	<TextView 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:id="@+id/TextViewManageSavedPodcastsError" 
+		android:paddingBottom="4dp" 
+		android:paddingTop="4dp" 
+		android:visibility="gone">
+	</TextView>
+
+	<ListView
+	    android:id="@+id/ListViewSavedPodcasts"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/omc_gray" >
+
+	</ListView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <color name="omc_red">#b90d0d</color>
+    <color name="omc_darkred">#6d0705</color>
+    <color name="omc_gray">#f6f6f6</color>
+    <color name="omc_darkgray">#464646</color>
+    <color name="omc_darkgray_trans">#D0464646</color>
+    <color name="omc_white">#ffffff</color>
+    <color name="omc_black">#000000</color>
+    
+
+</resources>

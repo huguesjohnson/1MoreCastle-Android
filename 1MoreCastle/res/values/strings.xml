@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">1MoreCastle</string>
+    <string name="accessibility_logo">1MoreCastle logo</string>
+    <string name="accessibility_downloadnotification">Download notification icon</string>
+    <string name="rss_url">http://1morecastle.com/feed/?paged=</string>
+    <string name="status_no_feed">Unable to download news and podcasts, please check your network connection and try again.</string>
+    <string name="status_updating">Checking for new articles and podcasts..</string>
+    <string name="caption_savedpodcasts">Saved podcasts</string>
+    <string name="caption_readmore">Read More</string>
+    <string name="about">Application written by Hugues Johnson (http://HuguesJohnson.com/). This program is free software under the terms of the GNU GPLv2. All content is owned by 1MoreCastle.com.</string>
+    
+</resources>
